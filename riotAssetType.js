@@ -19,7 +19,7 @@ class RiotAsset extends JSAsset {
 
     let code = this.options.sourceMap ? transpiled.code : transpiled
 
-    code = "var riot = require('riot');\n" + code
+    code = "import riot from 'riot'\n" + code
 
     if (transpiled.sourcemap) {
       this.sourceMap = transpiled.sourcemap.generate()

@@ -1,3 +1,3 @@
 module.exports = function (bundler) {
-  bundler.addAssetType('tag', require.resolve('./riotAssetType'))
+  bundler.addAssetType('.tag.html', require.resolve('./riotAssetType'))
 }
